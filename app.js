@@ -1,8 +1,14 @@
-var AppComponent = ng
-  .Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
-  })
-  .Class({
-    constructor: function () { }
-  });
+document.addEventListener('DOMContentLoaded', function () {
+	var AppComponent = ng
+	.Component({
+		selector: 'my-app',
+		templateUrl: 'template.html',
+		appInjector: [function(){}]
+	})
+	.Class({
+		constructor: function () { 
+		}
+	});
+
+	ng.bootstrap(AppComponent);
+});
